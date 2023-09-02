@@ -1,0 +1,122 @@
+#K1A SETTING FILE
+multiCameraLogicalXMLFile=mars.xml
+
+#log related
+logInfoMask=0
+logConfigMask=0
+logVerboseMask=0
+overrideLogLevels=0x1
+systemLogEnable=TRUE
+logCoreCfgMask=0
+enableAsciiLogging=FALSE
+logRequestMapping=FALSE
+enableTxtLogging=0
+traceGroupsEnable=0
+raiserecoverysigabrt=FALSE
+offlineLoggerEnableBackupLog=FALSE
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+
+pdafHWEnable=TRUE
+minReprocessInputWidth=0x1FFF
+minReprocessInputHeight=0x1FFF
+overrideFlashTorchCurrent=250
+overrideFlashlightCurrent=100
+overrideTorchCurrent=100
+bokehRelightVerion=2
+bokehVendorID=0
+BokehSlaveMfnrEnable=1
+ismfnrbokehsupported=TRUE
+isPhyicalMultiCameraSupported=TRUE
+multiCameraSWFrameSyncInterval=5
+multiCameraHWSyncMask=0x0
+multiCameraFPSMatchMask=0x1
+multiCameraFrameSyncMask=0x1
+multiCameraExposureTimeMatch=TRUE
+#multiCameraDetectFrameSync=true
+enableExposureTimeMatch=true
+isTeleOisSupported=true
+OISMaxWaitingTime=40
+NightOISMaxWaitingTime=50
+enableOISOptimization=TRUE
+validateTFParams=false
+validateANRSettings=false
+maxDigitalZoom=50.0
+disableFocusIndication=1
+colorBokehVersion=0
+isVideoBokehSupported=TRUE
+isFrontVideoBokehSupported=TRUE
+isColorRetentionSupported=TRUE
+isVideoFilterSupported=TRUE
+AIEnhancementVersion=2
+AIEnhancementVideoSupportVersion=1
+isVideoColorRetentionBackSupported=TRUE
+isVideoBeautyScreenshotSupported=TRUE
+superVideoFilterVersion=1
+isVideoBeautifierSupported=TRUE
+enableMotionCapture=1
+enablePostZoomFOV=1
+isZoomRatioSupported=TRUE
+isFakeSatSupported=1
+videoSATSupportedRange=0x0b
+is3rdLightWeightSupported=TRUE
+MfnrDefaultFrameNumber=5
+MfnrDynamicFrameEnable=1
+
+#uesd by satZoomSpeed static metadata
+satZoomButton=0.6:1:2:5:10:50|0.6:1:2:5:10:15
+satZoomTime=840|621
+
+#enable frong hdr in MiFwk
+SupportedAlgoEngineHdr=1
+setHDRMode=0
+IsSHDRThreeExpMode=1
+IsSHDRNonZSL=TRUE
+#enable gpu rotate
+enableGPURotation=TRUE
+
+#Add for Video Mode
+#Res1@FPS1|Res2@FPS2 ...,5--720P,6--1080P,8--4K,3001--8K
+vsquality=5@30|6@30|6@60|8@60|3001@24|8@120
+iseispreviewSupported=TRUE
+is60fpseisSupported=TRUE
+isVideoMimovieSupported=TRUE
+isVideoLogformatSupported=TRUE
+isVideoBeautyEISSupported=TRUE
+VideoHdrMode=2
+VideoHdrAvailableConfigurations=hdr10plus:4k@30|hdr10plus:4k@60|hdr10:8k@24|hdr10:8k@30
+is60fpsDynamicSupported=TRUE
+is30fpsDynamicSupported=FALSE
+isParallelCameraDeviceSupported=TRUE
+
+isSatPipSupported=TRUE
+enablePerRequestSync=FALSE
+isNightYuvReprocSupported=TRUE
+enableEarlyPipelineActivate=TRUE
+FPSForHALOutputBufferCombined=120
+StableFaceAF=TRUE
+ActuatorControl=TRUE
+
+#quickview
+enableCHIPartialData=1
+quickviewsupport=TRUE
+quickviewmask=0x2F07
+MIVISuperNightSupportMask=0x01
+AFeffectiveSC=0x00000000
+
+#uesd by MOFAlignment static metadata
+imageConfHighThreshold =150
+imageConfLowThreshold =100
+minAge =10
+absoluteMotion =1.0
+absoluteMotionThreshold =1.0
+absoluteMotionConfidence =100
+absoluteMotionConfidenceThreshold =100
+manualAlignmentFusionMode =AlignGyroBaseOnly
+soundTimeWhenAnchor=1
+
+#enable earlyPCR
+numPCRsBeforeStreamOn=1
+
+#Max Flush timeout setting
+sessionMaxFlushWaitTime=2000

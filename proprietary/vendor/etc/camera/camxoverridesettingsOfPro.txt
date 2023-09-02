@@ -1,0 +1,139 @@
+#K1 SETTING FILE
+multiCameraLogicalXMLFile=star.xml
+
+#log related
+logInfoMask=0
+logWarningMask=0
+logConfigMask=0
+overrideLogLevels=0x1
+systemLogEnable=TRUE
+logCoreCfgMask=0
+enableAsciiLogging=FALSE
+logRequestMapping=FALSE
+enableTxtLogging=0
+traceGroupsEnable=0
+raiserecoverysigabrt=FALSE
+offlineLoggerEnableBackupLog=FALSE
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+
+enableBLMClient=1
+pdafHWEnable=TRUE
+minReprocessInputWidth=0x1FFF
+minReprocessInputHeight=0x1FFF
+enableTOFInterface=TRUE
+customTOFSensorLib=vendor/lib64/vl53l5.hal@1.0.so
+switchTofSensorMode=3
+overrideFlashTorchCurrent=300
+overrideFlashlightCurrent=100
+overrideTorchCurrent=100
+bokehRelightVerion=2
+bokehVendorID=0
+isZoomRatioSupported=TRUE
+videoSATSupportedRange=0x0b
+isPhyicalMultiCameraSupported=TRUE
+enablePostZoomFOV=1
+multiCameraSWFrameSyncInterval=5
+multiCameraHWSyncMask=0x0
+multiCameraFPSMatchMask=0x1
+multiCameraFrameSyncMask=0x1
+multiCameraExposureTimeMatch=TRUE
+#multiCameraDetectFrameSync=true
+enableExposureTimeMatch=true
+isTeleOisSupported=true
+OISMaxWaitingTime=40
+NightOISMaxWaitingTime=50
+enableOISOptimization=TRUE
+enableCameraDisplayVsync=true
+BokehSlaveMfnrEnable=1
+ismfnrbokehsupported=TRUE
+isSeBokehSupported=FALSE
+MfnrDefaultFrameNumber=8
+MfnrDynamicFrameEnable=0
+validateTFParams=false
+validateANRSettings=false
+isFakeSatSupported=1
+setHDRMode=0
+IsSHDRThreeExpMode=1
+IsSHDRNonZSL=TRUE
+maxDigitalZoom=120.0
+disableFocusIndication=1
+colorBokehVersion=0
+isVideoBokehSupported=TRUE
+isFrontVideoBokehSupported=TRUE
+isColorRetentionSupported=TRUE
+isVideoFilterSupported=TRUE
+AIEnhancementVersion=2
+AIEnhancementVideoSupportVersion=1
+isVideoColorRetentionBackSupported=TRUE
+isVideoBeautyScreenshotSupported=TRUE
+superVideoFilterVersion=1
+isVideoBeautifierSupported=TRUE
+enableMotionCapture=1
+enableCHIPartialData=1
+quickviewsupport=TRUE
+quickviewmask=0x2F07
+
+#uesd by satZoomSpeed static metadata
+satZoomButton=0.5:1:2:5:10:20:50:120|0.5:1:2:5:10:15
+satZoomTime=1000|621
+
+#enable front hdr in Mifwk, rear hdr for dxo, 4 frame fusion mode
+SupportedAlgoEngineHdr=3
+
+#Add for Video Mode
+#Res1@FPS1|Res2@FPS2 ...,5--720P,6--1080P,8--4K,3001--8K
+vsquality=5@30|6@30|6@60|8@60|3001@24|8@120
+iseispreviewSupported=TRUE
+is60fpseisSupported=TRUE
+isVideoMimovieSupported=TRUE
+VideoHdrMode=2
+VideoHdrAvailableConfigurations=hdr10plus:4k@30|hdr10plus:4k@60|hdr10:8k@24|hdr10:8k@30
+isVideoLogformatSupported=TRUE
+is60fpsDynamicSupported=TRUE
+is30fpsDynamicSupported=FALSE
+fovcEnable=1
+isVideoBeautyEISSupported=TRUE
+HDRSupportedFlashHdr=1
+isParallelCameraDeviceSupported=TRUE
+#enable gpu rotate
+enableGPURotation=TRUE
+#Add for thirdparty app use miuicamera
+is3rdLightWeightSupported=TRUE
+adaptLensMap=0x1
+
+#flicker
+luxIndexThreashouldForFlicker=320.000
+
+isSatPipSupported=TRUE
+enablePerRequestSync=FALSE
+isNightYuvReprocSupported=TRUE
+enableEarlyPipelineActivate=TRUE
+FPSForHALOutputBufferCombined=120
+StableFaceAF=TRUE
+MIVISuperNightSupportMask=0x01
+
+ActuatorControl=TRUE
+
+imageConfHighThreshold =150
+imageConfLowThreshold =100
+minAge =10
+absoluteMotion =1.0
+bsoluteMotionThreshold =1.0
+absoluteMotionConfidence =100
+absoluteMotionConfidenceThreshold =100
+manualAlignmentFusionMode =AlignGyroBaseOnly
+isBeautyMakeupSupported=TRUE
+AFeffectiveSC=0x00000000
+
+
+
+#Input graph self-check switch
+InputInfoChecker=0
+soundTimeWhenAnchor=1
+
+#enable earlyPCR
+numPCRsBeforeStreamOn=1
+
+#Max Flush timeout setting
+sessionMaxFlushWaitTime=2000
